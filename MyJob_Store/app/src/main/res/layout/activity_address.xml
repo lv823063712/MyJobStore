@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.activity.AddressActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="我的收货地址"
+        android:textColor="#666"
+        android:textSize="@dimen/sp_16" />
+
+    <TextView
+        android:id="@+id/My_Address_Complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="@dimen/dp_24"
+        android:text="完成"
+        android:textColor="#666"
+        android:textSize="@dimen/sp_12" />
+
+
+    <Button
+        android:id="@+id/Add_Address"
+
+        android:layout_width="@dimen/dp_116"
+        android:layout_height="@dimen/dp_30"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_30"
+        android:background="@drawable/address_btn_item"
+        android:text="新增收货地址"
+        android:textColor="#fff"
+        android:textSize="@dimen/sp_12" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/My_Address_Recy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Add_Address"
+        android:layout_below="@+id/My_Address_Complete"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_24"></android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

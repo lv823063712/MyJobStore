@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_292"
+    android:layout_height="@dimen/dp_97"
+    android:padding="@dimen/dp_10">
+
+    <ImageView
+        android:id="@+id/oreder_item_img"
+        android:layout_width="@dimen/dp_81"
+        android:layout_height="@dimen/dp_81"
+        />
+
+    <TextView
+        android:id="@+id/order_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_toRightOf="@id/oreder_item_img"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="ahahhahahahahahahahaahahahahahsdassssssssasdsadasddsaasd"
+        android:textColor="#666666"
+        android:textSize="@dimen/sp_12" />
+
+    <TextView
+        android:id="@+id/order_item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_toRightOf="@id/oreder_item_img"
+        android:text="￥320"
+        android:textColor="#ff0606"
+        android:textSize="@dimen/sp_14" />
+
+    <LinearLayout
+        android:id="@+id/order_item_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/order_item_jian"
+            android:layout_width="@dimen/dp_18"
+            android:layout_height="@dimen/dp_18"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="@dimen/dp_3"
+            android:src="@mipmap/jian"
+            android:textColor="#666666"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/order_item_shu"
+            android:layout_width="@dimen/dp_31"
+            android:layout_height="@dimen/dp_18"
+            android:layout_gravity="bottom"
+            android:background="#ddd"
+            android:maxLength="2"
+            android:paddingLeft="@dimen/dp_5"
+            android:paddingRight="@dimen/dp_5"
+            android:text="22"
+            android:textColor="#666666"
+            android:textSize="@dimen/sp_12" />
+
+        <ImageView
+            android:id="@+id/order_item_jia"
+            android:layout_width="@dimen/dp_18"
+            android:layout_height="@dimen/dp_18"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/dp_3"
+            android:layout_marginRight="@dimen/dp_10"
+            android:src="@mipmap/jia"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/order_item_pingjia"
+        android:layout_width="@dimen/dp_70"
+        android:layout_height="@dimen/dp_26"
+        android:layout_alignTop="@id/order_PendingPayment_cancel"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="#ff5757"
+        android:text="去评价"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/sp_14"
+        android:visibility="gone" />
+
+</RelativeLayout>

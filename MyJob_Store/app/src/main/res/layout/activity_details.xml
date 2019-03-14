@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.activity.DetailsActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/My_Details_Back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:src="@mipmap/common_nav_btn_back_n_hdpi" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="商品详情"
+                    android:textSize="@dimen/dp_25" />
+            </LinearLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/My_Dteails_Banner"
+                android:layout_width="@dimen/dp_312"
+                android:layout_height="@dimen/dp_274"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:layout_marginRight="@dimen/dp_24"
+                android:layout_marginBottom="@dimen/dp_10" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/My_Details_Show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:layout_marginRight="@dimen/dp_24"></android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_margin="@dimen/dp_24"
+                android:background="#000" />
+
+            <WebView
+                android:id="@+id/My_Web"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:layout_marginRight="@dimen/dp_24"></WebView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/My_Details_Comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_24"></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/AddShoppingCar"
+        android:layout_width="@dimen/dp_41"
+        android:layout_height="@dimen/dp_35"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="510dp"
+        android:background="@drawable/add_shopping_item"
+        android:drawableLeft="@mipmap/common_btn_add_n_hdpi"
+        android:textColor="#fff"
+        android:paddingLeft="@dimen/dp_6"
+        android:textSize="@dimen/sp_28" />
+    <Button
+        android:id="@+id/AddBuyBuyBuy"
+        android:layout_width="@dimen/dp_41"
+        android:layout_height="@dimen/dp_35"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="560dp"
+        android:background="@drawable/add_shopping_item"
+        android:paddingLeft="@dimen/dp_6"
+        android:drawableLeft="@mipmap/common_btn_buy_n_hdpi"
+        android:textColor="#fff"
+        android:textSize="@dimen/sp_28" />
+</RelativeLayout>

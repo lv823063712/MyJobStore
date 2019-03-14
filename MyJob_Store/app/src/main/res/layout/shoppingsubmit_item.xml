@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_97"
+    android:layout_marginLeft="@dimen/dp_14"
+    android:layout_marginRight="@dimen/dp_14"
+    android:layout_marginTop="@dimen/dp_15">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_97"
+        android:background="@drawable/my_ziliao_test"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ShoppingCar_head2"
+            android:layout_width="@dimen/dp_81"
+            android:layout_height="@dimen/dp_81"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginRight="@dimen/dp_10" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_81"
+            android:layout_marginTop="@dimen/dp_8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ShoppingCar_title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="正宗迪奥香水迪奥香水正宗迪奥香水正宗迪奥..."
+                android:textColor="#666"
+                android:textSize="@dimen/sp_12" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:id="@+id/ShoppingCar_price2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="18dp"
+                    android:text="¥999"
+                    android:textColor="#f00" />
+
+                <soexample.bigfly.com.myjob_store.utils.user_defined_view.AddAndSubtractView
+                    android:id="@+id/Myjiajian2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginBottom="0dp"></soexample.bigfly.com.myjob_store.utils.user_defined_view.AddAndSubtractView>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

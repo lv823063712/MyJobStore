@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!-- android:background="@drawable/my_ziliao_test"-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_5"
+
+        android:background="#00666666">
+
+        <RelativeLayout
+            android:layout_width="@dimen/dp_312"
+            android:layout_height="@dimen/dp_90">
+
+            <RelativeLayout
+                android:id="@+id/My_name"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20">
+
+                <TextView
+                    android:id="@+id/address_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="李小二"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/address_phone2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:text="15711495961"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/sp_14" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/address_local2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/My_name"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_5"
+                android:lines="2"
+                android:text="啦啦啦啦啦啦啦啦啦啦"
+                android:textColor="#fff"
+                android:textSize="@dimen/dp_12" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="0dp"
+                android:background="#fcef00"
+                android:layout_marginEnd="82dp"
+                android:layout_marginRight="82dp" />
+
+            <TextView
+                android:id="@+id/My_Select"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="54dp"
+                android:layout_marginLeft="54dp"
+                android:gravity="center"
+                android:text="选择"
+                android:textColor="#fc6b6b" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

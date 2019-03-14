@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="@drawable/draw"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/dp_5">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/MyFootImg"
+            android:layout_margin="@dimen/dp_10"
+            android:layout_width="@dimen/dp_150"
+            android:layout_height="@dimen/dp_150"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/MyFootName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="aaaaaaaaa" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/MyFootPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aaaaaaaaa"
+                android:textColor="#f00"
+                android:textSize="@dimen/sp_12"/>
+
+            <TextView
+                android:id="@+id/MyFootLook"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aaaaaaaaa" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/MyFootDate"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aaaaaaaaa" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

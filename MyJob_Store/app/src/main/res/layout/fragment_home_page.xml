@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ui.fragment.HomePageFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60">
+
+            <ImageView
+                android:id="@+id/My_btn_menu"
+                android:layout_width="@dimen/dp_16"
+                android:layout_height="@dimen/dp_16"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@mipmap/common_nav_btn_menu_n_hdpi" />
+
+            <com.xw.repo.XEditText
+                android:id="@+id/my_search_edittext"
+                android:layout_width="@dimen/dp_230"
+                android:layout_height="@dimen/dp_30"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_13"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:background="@drawable/my_search_edittext"
+                android:drawableLeft="@drawable/a"
+                android:drawablePadding="@dimen/dp_10"
+                android:hint="请输入您要搜索的商品"
+                android:textColorHint="#b1adad" />
+
+            <TextView
+                android:id="@+id/My_search_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_11"
+                android:text="搜索"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/My_Fragment_Sun"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

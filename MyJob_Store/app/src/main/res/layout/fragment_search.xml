@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.fragmentsun.SearchFragment">
+
+    <soexample.bigfly.com.myjob_store.utils.user_defined_view.user_defined_View
+        android:id="@+id/My_Seach_Result"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_80"
+        android:layout_marginTop="@dimen/dp_10"></soexample.bigfly.com.myjob_store.utils.user_defined_view.user_defined_View>
+
+    <ImageView
+        android:id="@+id/cannot_find_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:src="@mipmap/cannot_find_hdpi"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/cannot_find_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cannot_find_img"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:text="抱歉，没有找到商品额~~"
+        android:visibility="gone" />
+
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/My_Search_XRecy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.jcodecraeer.xrecyclerview.XRecyclerView>
+
+
+</LinearLayout>
